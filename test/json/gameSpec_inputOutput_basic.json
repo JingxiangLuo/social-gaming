@@ -1,0 +1,54 @@
+{
+  "configuration": {
+    "name": "MVP game",
+    "player count": {
+      "min": 0,
+      "max": 0
+    },
+    "audience": false,
+    "setup": {}
+  },
+  "constants": {},
+  "variables": {
+    "debug_target": 0
+  },
+  "per-player": {
+    "input": 0
+  },
+  "per-audience": {},
+  "rules": [
+    {
+      "rule": "global-message",
+      "value": "About to collect input"
+    },
+    { "rule": "foreach",
+      "list": "players",
+      "element": "player",
+      "rules": [
+
+        { "rule": "input-text",
+          "to": "player",
+          "prompt": "Please enter a number.",
+          "result": "player.input"
+        },
+        {
+          "rule": "global-message",
+          "value": "This was the input: {player.input}"
+        }
+
+      ]
+    },
+    {
+      "rule": "global-message",
+      "value": "Finished collecting input"
+    },
+    {
+      "rule": "global-message",
+      "value": "About to produce output"
+    },
+    {
+      "rule": "global-message",
+      "value": "Finished producing output"
+    }
+  ]
+}

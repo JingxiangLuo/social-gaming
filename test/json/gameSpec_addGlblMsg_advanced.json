@@ -1,0 +1,101 @@
+{
+  "configuration": {
+    "name": "MVP game",
+    "player count": {
+      "min": 0,
+      "max": 0
+    },
+    "audience": false,
+    "setup": {}
+  },
+  "constants": {},
+  "variables": {
+    "differently_named_variable": -100,
+    "another_variable": 42,
+    "largeVariable": 123456
+  },
+  "per-player": {},
+  "per-audience": {},
+  "rules": [
+    {
+      "rule": "global-message",
+      "value": "first variable: {differently_named_variable}!"
+    },
+    {
+      "rule": "global-message",
+      "value": "second variable: {another_variable}!"
+    },
+    {
+      "rule": "global-message",
+      "value": "3rd variable: {largeVariable}!"
+    },
+    {
+      "rule": "add",
+      "to": "differently_named_variable",
+      "value": 1
+    },
+    {
+      "rule": "add",
+      "to": "differently_named_variable",
+      "value": 1
+    },
+    {
+      "rule": "add",
+      "to": "differently_named_variable",
+      "value": 1
+    },
+    {
+      "rule": "add",
+      "to": "differently_named_variable",
+      "value": 1
+    },
+    {
+      "rule": "add",
+      "to": "differently_named_variable",
+      "value": 1
+    },
+    {
+      "rule": "global-message",
+      "value": "first variable: {differently_named_variable}!"
+    },
+    {
+      "rule": "add",
+      "to": "differently_named_variable",
+      "value": 1
+    },
+    {
+      "rule": "add",
+      "to": "differently_named_variable",
+      "value": 1
+    },
+    {
+      "rule": "add",
+      "to": "differently_named_variable",
+      "value": 1
+    },
+    {
+      "rule": "add",
+      "to": "differently_named_variable",
+      "value": 1
+    },
+    {
+      "rule": "add",
+      "to": "differently_named_variable",
+      "value": 1
+    },
+    {
+      "rule": "global-message",
+      "value": "DEBUG VALUE: {debug_target}!"
+    },
+    {
+      "rule": "add",
+      "to": "another_variable",
+      "value": 58
+    },
+    {
+      "rule": "add",
+      "to": "largeVariable",
+      "value": 123456
+    }
+  ]
+}

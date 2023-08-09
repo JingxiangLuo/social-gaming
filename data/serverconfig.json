@@ -1,0 +1,4 @@
+{
+  "port": 4000,
+  "serverhtml": "../web-socket-networking/webchat.html"
+}

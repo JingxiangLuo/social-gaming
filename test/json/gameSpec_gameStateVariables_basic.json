@@ -1,0 +1,25 @@
+{
+    "configuration": {
+      "name": "MVP game",
+      "player count": {
+        "min": 0,
+        "max": 0
+      },
+      "audience": false,
+      "setup": {}
+    },
+    "constants": {},
+    "variables": {
+      "debug_target": -40
+    },
+    "per-player": {
+      "input": 13
+    },
+    "per-audience": {},
+    "rules": [
+      {
+        "rule": "global-message",
+        "value": "DEBUG VALUE: {debug_target}!"
+      }
+    ]
+  }
